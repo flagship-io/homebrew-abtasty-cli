@@ -5,11 +5,11 @@
 class AbtastyCli < Formula
   desc ""
   homepage "https://github.com/flagship-io/abtasty-cli"
-  version "1.5.4"
+  version "1.6.0"
 
   on_macos do
-    url "https://github.com/flagship-io/abtasty-cli/releases/download/v1.5.4/abtasty-cli_1.5.4_darwin_all.tar.gz"
-    sha256 "890f79bea82892753323388fe0a5079873a4ad82e3ce296972a8fa933df4acf4"
+    url "https://github.com/flagship-io/abtasty-cli/releases/download/v1.6.0/abtasty-cli_1.6.0_darwin_all.tar.gz"
+    sha256 "211db6ae869dc2915b7f9e648b879e303f66c61df02f1dfd1ac2417542a502e6"
 
     def install
       bin.install "abtasty-cli"
@@ -18,15 +18,15 @@ class AbtastyCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flagship-io/abtasty-cli/releases/download/v1.5.4/abtasty-cli_1.5.4_linux_amd64.tar.gz"
-      sha256 "d39fa3a15c9b9930cb17d8c64bc4e7f3aaac5fd345bea9101a0b4332870acd04"
+      url "https://github.com/flagship-io/abtasty-cli/releases/download/v1.6.0/abtasty-cli_1.6.0_linux_amd64.tar.gz"
+      sha256 "bb33c9c5dfbd447bad5ea5b430b0958af559f7eb2d01b185cc6ff4a507c447ed"
       def install
         bin.install "abtasty-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flagship-io/abtasty-cli/releases/download/v1.5.4/abtasty-cli_1.5.4_linux_arm64.tar.gz"
-      sha256 "a0a295c48294bf76ff9a64607e96e8ae163a1b6c39c506a9930405ecc9e24c9a"
+      url "https://github.com/flagship-io/abtasty-cli/releases/download/v1.6.0/abtasty-cli_1.6.0_linux_arm64.tar.gz"
+      sha256 "7adac6f082317e8d4f73a935d265fd2b8569a8f9c7b0bd8c30ade941500267a1"
       def install
         bin.install "abtasty-cli"
       end
